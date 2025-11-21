@@ -1,0 +1,35 @@
+<div class="container my-4">
+  <h4>Lista de Questões</h4>
+  <table class="table table-bordered table-striped">
+    <thead class="table-primary">
+      <tr>
+        <th>ID</th>
+        <th>Tópico</th>
+        <th>Texto</th>
+        <th>Instrução</th>
+        <th>Alternativas</th>
+        <th>Resposta Correta</th>
+        <th>Nível</th>
+        <th>Comentário</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let q of Questoes">
+        <td>{{ q.id }}</td>
+        <td>{{ q.topico }}</td>
+        <td>{{ q.textoQuestao }}</td>
+        <td>{{ q.instrucao }}</td>
+        <td>
+          A: {{ q.alternativaA }}<br>
+          B: {{ q.alternativaB }}<br>
+          C: {{ q.alternativaC }}<br>
+          D: {{ q.alternativaD }}<br>
+          <span *ngIf="q.alternativaE">E: {{ q.alternativaE }}</span>
+        </td>
+        <td>{{ q.respostaCorreta }}</td>
+        <td>{{ q.nivel }}</td>
+        <td>{{ q.comentario }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
