@@ -1,0 +1,31 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/out": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact",
+    "html"
+  ],
+  "prettier.requireConfig": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "all",
+  "angular.enable-strict-mode-prompt": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 🔽 ADICIONADO PARA MANTER PASTAS EXPANDIDAS
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false
+}
